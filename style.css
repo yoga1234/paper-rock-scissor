@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #D1D1FF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* start page */
+.start-interface {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+  margin: 150px auto 0 auto;
+  background-color: #BBBAFF;
+}
+.start-button {
+  border: none;
+  border-radius: 10px;
+  height: 70px;
+  width: 200px;
+  margin: 200px auto 0 auto;
+  display: block;
+  box-shadow: 1px 1px 3px 1px #000;
+  font-size: 30px;
+  transition: all .1s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color: #757AFF;
+  outline: none;
+}
+.start-button:hover {
+  box-shadow: 3px 1px 5px 1px #000;
+}
+
+/* playing page */
+.play-game {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 800px;
+  height: 600px;
+  margin: 150px auto 0 auto;
+  background-color: #BBBAFF;
+}
+.score-section {
+  display: flex;
+  justify-content: space-between;
+}
+.player-score {
+  border: 1px solid #757AFF;
+  width: max-content;
+  height: 30px;
+  font-size: 22px;
+  margin: 5px 0 0 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #757AFF;
+  text-transform: uppercase;
+}
+.computer-score {
+  border: 1px solid #757AFF;
+  width: max-content;
+  height: 30px;
+  font-size: 22px;
+  margin: 5px 5px 0 0;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #757AFF;
+  text-transform: uppercase;
+}
+.choose-sign {
+  display: block;
+  width: 100%;
+}
+.choose-sign p {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.computer-sign p {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.computer-sign i {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.sign-section {
+  display: flex;
+  justify-content: center;
+}
+.sign-section i {
+  border: 3px solid #D1D1FF;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px 0 10px;
+}
+.sign-size {
+  font-size: 150px !important;
+}
+.generate-score {
+  border-top: 1px solid #fff;
+}
+.generate-score p {
+  border: 1px solid #D1D1FF;
+  width: max-content;
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 20px auto 0 auto;
+}

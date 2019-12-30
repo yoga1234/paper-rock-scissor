@@ -6,44 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="yogasmara">
   <title>Paper rock scissor game</title>
+  <link rel="icon" href="./img/top-icon.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   
+  <!-- interface for start button -->
+  <div class="start-interface" style="display: none;">
+    <button id="start-button" class="start-button">START</button>
+  </div>
 
-  <script>
-    // function for computer
-    function computerPlay(){
-      let compSelection = ["paper", "rock", "scissor"]
-      // randoming the array return
-      let result = compSelection[Math.floor(Math.random() * 3)]
-      return result
-    }
+  <!-- interface for playing the game -->
+  <div class="play-game">
+    <div class="score-section">
+      <p class="player-score">Player: 0</p>
+      <p class="computer-score">Computer: 0</p>
+    </div>
+    <div class="choose-sign">
+      <p>Choose a sign:</p>
+    </div>
+    <div class="sign-section">
+      <i class="fa fa-hand-paper-o sign-size"></i>
+      <i class="fa fa-hand-rock-o sign-size"></i>
+      <i class="fa fa-hand-scissors-o sign-size"></i>
+    </div>
+    <div class="computer-sign">
+      <p>Computer sign: </p>
+      <i class="fa fa-hand-scissors-o sign-size"></i>
+    </div>
+    <div class="generate-score">
+      <p>Computer won</p>
+    </div>
+  </div>
 
-    // function for playing the game
-    function playRound(playerSelection, computerSelection) {
-      console.log(computerSelection)
-      if(playerSelection == computerSelection) {
-        console.log("draw")
-      } else if(playerSelection == "scissor" && computerSelection == "paper") {
-        console.log("Player win!")
-      } else if(playerSelection == "scissor" && computerSelection == "rock") {
-        console.log("Computer win!")
-      } else if(playerSelection == "rock" && computerSelection == "scissor") {
-        console.log("player win!")
-      } else if(playerSelection == "rock" && computerSelection == "paper") {
-        console.log("Computer win!")
-      } else if(playerSelection == "paper" && computerSelection == "scissor") {
-        console.log("Computer win!")
-      } else if(playerSelection == "paper" && computerSelection == "rock") {
-        console.log("player win!")
-      }
-      
-    }
-
-    const inputSelection = prompt("Enter your selection")
-    let playerSelection = inputSelection.toLowerCase()
-    const computerSelection = computerPlay()
-    playRound(playerSelection, computerSelection)
-  </script>
+  <script src="./main.js"></script>
 </body>
 </html>
