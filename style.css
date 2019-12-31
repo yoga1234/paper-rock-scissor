@@ -104,6 +104,10 @@ body {
   border-radius: 5px;
   padding: 5px;
   margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+.sign-section i:hover {
+  border: 3px solid #757AFF;
 }
 .sign-size {
   font-size: 150px !important;
@@ -119,4 +123,43 @@ body {
   text-transform: uppercase;
   padding: 10px;
   margin: 20px auto 0 auto;
+}
+
+/* finish interface */
+.game-finish {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+  margin: 150px auto 0 auto;
+  background-color: #BBBAFF;
+}
+.name-winner {
+  background-color: #757AFF;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: max-content;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 80px auto 0 auto;
+}
+.restart-button {
+  border: none;
+  border-radius: 10px;
+  height: 70px;
+  width: 200px;
+  margin: 200px auto 0 auto;
+  display: block;
+  box-shadow: 1px 1px 3px 1px #000;
+  font-size: 30px;
+  transition: all .2s ease;
+  cursor: pointer;
+  color: #fff;
+  background-color: #757AFF;
+  outline: none;
+  text-transform: uppercase;
+}
+.restart-button:hover {
+  box-shadow: 3px 1px 5px 1px #000;
 }
