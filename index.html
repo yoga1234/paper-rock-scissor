@@ -13,40 +13,43 @@
 <body>
   
   <!-- interface for start button -->
-  <div class="start-interface" style="display: none;">
+  <div id="start-interface" class="start-game">
     <button id="start-button" class="start-button">START</button>
   </div>
 
   <!-- interface for playing the game -->
-  <div class="play-game" style="display: none;">
+  <div id="play-interface" class="play-game">
     <div class="score-section">
-      <p class="player-score">Player: 0</p>
-      <p class="computer-score">Computer: 0</p>
+      <p class="player-score">Player: <span id="playerScore"></span></p>
+      <p class="computer-score">Computer: <span id="computerScore"></span></p>
     </div>
     <div class="choose-sign">
       <p>Choose a sign:</p>
     </div>
-    <div class="sign-section">
+    <div class="choosen-sign">
+      <p id="choosenSign">-</p>
+    </div>
+    <div id="hand-sign" class="sign-section">
       <i class="fa fa-hand-paper-o sign-size"></i>
       <i class="fa fa-hand-rock-o sign-size"></i>
       <i class="fa fa-hand-scissors-o sign-size"></i>
     </div>
     <div class="computer-sign">
       <p>Computer sign: </p>
-      <i class="fa fa-hand-scissors-o sign-size"></i>
+      <i id="computerSign" class="fa sign-size"></i>
     </div>
     <div class="generate-score">
-      <p>Computer won</p>
+      <p id="score-result">-</p>
     </div>
   </div>
 
   <!-- interface for game finish -->
-  <div class="game-finish">
+  <div id="gameFinish" class="game-finish">
     <div class="winner-text">
-      <p class="name-winner">Computer win!</p>
+      <p id="nameWinner" class="name-winner">Computer win!</p>
     </div>
     <div class="restart-interface">
-      <button class="restart-button">restart</button>
+      <button id="restartButton" class="restart-button">restart</button>
     </div>
   </div>
 

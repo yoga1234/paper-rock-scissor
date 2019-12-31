@@ -7,7 +7,7 @@ body {
 }
 
 /* start page */
-.start-interface {
+.start-game {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   width: 800px;
@@ -39,9 +39,9 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   width: 800px;
-  height: 600px;
   margin: 150px auto 0 auto;
   background-color: #BBBAFF;
+  display: none;
 }
 .score-section {
   display: flex;
@@ -83,6 +83,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
+.choosen-sign p {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
 .computer-sign p {
   text-align: center;
   font-size: 30px;
@@ -90,10 +96,10 @@ body {
   margin-bottom: 0;
 }
 .computer-sign i {
-  display: block;
+  border-radius: 5px;
+  padding: 5px;
   text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
+  display: block;
 }
 .sign-section {
   display: flex;
@@ -116,13 +122,13 @@ body {
   border-top: 1px solid #fff;
 }
 .generate-score p {
-  border: 1px solid #D1D1FF;
+  /* border: 1px solid #D1D1FF; */
   width: max-content;
   text-align: center;
   font-size: 32px;
   text-transform: uppercase;
   padding: 10px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 10px auto;
 }
 
 /* finish interface */
@@ -133,6 +139,7 @@ body {
   height: 500px;
   margin: 150px auto 0 auto;
   background-color: #BBBAFF;
+  display: none;
 }
 .name-winner {
   background-color: #757AFF;
